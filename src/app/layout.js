@@ -38,7 +38,7 @@ export const metadata = {
   links: [
     {
       rel: "preload",
-      href: "https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/fonts/jameel-noori-nastaleeq.woff2",
+      href: "/fonts/jnn.woff2",
       as: "font",
       type: "font/woff2",
       crossOrigin: "anonymous",
@@ -50,10 +50,14 @@ export default function RootLayout({ children }) {
   return (
     <html lang="ur" dir="rtl" className={gulzar.variable}>
       <head>
-        <link
-          href="https://cdn.jsdelivr.net/npm/jameel-noori@1.1.2/jameel-noori.min.css"
-          rel="stylesheet"
-        />
+        <style>{`
+          @font-face {
+            font-family: 'Jameel Noori Nastaleeq';
+            src: url('/fonts/jnn.woff2') format('woff2');
+            font-weight: normal;
+            font-style: normal;
+          }
+        `}</style>
       </head>
       <body
         className={`${geistSans.variable} ${geistMono.variable} font-gulzar antialiased`}
