@@ -1,8 +1,16 @@
 'use client';
 
+import Link from 'next/link';
 import { FaWhatsapp, FaFacebook, FaYoutube } from 'react-icons/fa';
 
 export default function Hero() {
+  const handleContactScroll = () => {
+    const element = document.getElementById('contact');
+    if (element) {
+      const offset = element.offsetTop - 80;
+      window.scrollTo({ top: offset, behavior: 'smooth' });
+    }
+  };
   return (
     <>
       <section id="hero" className="min-h-screen flex items-center justify-center px-4" style={{ backgroundColor: 'var(--background)' }}>
@@ -23,7 +31,7 @@ export default function Hero() {
           </p>
 
           {/* Button */}
-          <button className="border-2 font-semibold py-3 px-8 rounded-full transition duration-300" style={{ borderColor: 'var(--gold)', color: 'var(--gold)' }} onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--primary-bg)'} onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}>
+          <button onClick={handleContactScroll} className="border-2 font-semibold py-3 px-8 rounded-full transition duration-300 cursor-pointer" style={{ borderColor: 'var(--gold)', color: 'var(--gold)' }} onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--primary-bg)'} onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}>
             رابطہ کریں
           </button>
         </div>
@@ -100,13 +108,13 @@ export default function Hero() {
             </div>
 
             {/* Card 2 - منہج و نظام */}
-            <div className="p-6 rounded-3xl h-40 flex flex-col justify-between relative overflow-hidden" style={{ backgroundColor: 'var(--primary-bg)', border: '2px solid var(--secondary)' }}>
+            <Link href="/curriculum" className="p-6 rounded-3xl h-40 flex flex-col justify-between relative overflow-hidden transition-transform hover:scale-105 cursor-pointer" style={{ backgroundColor: 'var(--primary-bg)', border: '2px solid var(--secondary)' }}>
               <div className="absolute top-4 left-4 text-4xl">💼</div>
               <div className="mt-auto text-right">
                 <h3 className="text-xl font-bold mb-1 font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>منہج و نظام</h3>
                 <p className="text-xs font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.5' }}>اصلاحی و تربیتی منہج</p>
               </div>
-            </div>
+            </Link>
 
             {/* Card 3 - تعارفِ بانی */}
             <div className="p-6 rounded-3xl h-40 flex flex-col justify-between relative overflow-hidden" style={{ backgroundColor: 'var(--primary-bg)', border: '2px solid var(--secondary)' }}>
@@ -210,13 +218,13 @@ export default function Hero() {
 
               {/* Social Media Icons */}
               <div className="flex gap-4">
-                <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--warm-brown)' }} title="WhatsApp">
+                <a href="https://api.whatsapp.com/send/?phone=923177930224&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--warm-brown)' }} title="WhatsApp">
                   <FaWhatsapp />
                 </a>
-                <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--warm-brown)' }} title="Facebook">
+                <a href="https://www.facebook.com/markazdaruleman" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--warm-brown)' }} title="Facebook">
                   <FaFacebook />
                 </a>
-                <a href="#" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--primary)' }} title="YouTube">
+                <a href="https://www.youtube.com/@markazdarulemanofficial" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--primary)' }} title="YouTube">
                   <FaYoutube />
                 </a>
               </div>
