@@ -1,7 +1,8 @@
 'use client';
 
 import Link from 'next/link';
-import { FaWhatsapp, FaFacebook, FaYoutube } from 'react-icons/fa';
+import Image from 'next/image';
+import { FaWhatsapp, FaFacebook, FaYoutube, FaUser, FaQuoteLeft, FaGraduationCap, FaBook, FaMicrophone, FaBuilding } from 'react-icons/fa';
 
 export default function Hero() {
   const handleContactScroll = () => {
@@ -20,20 +21,27 @@ export default function Hero() {
             بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم
           </p>
 
-          {/* Main Heading */}
-          <h1 className="text-xl md:text-8xl mb-6 mt-6" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em', lineHeight: '1.6', wordSpacing: '0.15em' }}>
-            دارالایمان والتقویٰ
-          </h1>
+          {/* Main Heading - Image */}
+          <div className="mb-6 mt-2 flex justify-center">
+            <Image 
+              src="/name.png" 
+              alt="دارالایمان والتقویٰ" 
+              width={400}
+              height={100}
+              className="w-auto h-auto"
+              priority
+            />
+          </div>
 
-          {/* Subheading */}
-          <p className="text-lg md:text-xl mb-8 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.7', wordSpacing: '0.08em' }}>
-            تزکیہ نفس اور روحانی اصلاح کا مرکز
-          </p>
-
-          {/* Button */}
-          <button onClick={handleContactScroll} className="border-2 font-semibold py-3 px-8 rounded-full transition duration-300 cursor-pointer" style={{ borderColor: 'var(--gold)', color: 'var(--gold)' }} onMouseEnter={(e) => e.target.style.backgroundColor = 'var(--primary-bg)'} onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}>
-            رابطہ کریں
-          </button>
+          {/* Buttons */}
+          <div className="flex gap-3 justify-center">
+            <Link href="#about" className="border-2 font-semibold pt-2 pb-1 px-6 rounded-xl transition duration-300 cursor-pointer inline-block" style={{ borderColor: 'var(--gold)', color: '#ffffff', backgroundColor: '#3e2723' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#2a1810'} onMouseLeave={(e) => e.target.style.backgroundColor = '#3e2723'}>
+              تعارف پڑھیں
+            </Link>
+            <button onClick={handleContactScroll} className="border-2 font-semibold pt-2 px-6 rounded-xl transition duration-300 cursor-pointer" style={{ borderColor: 'var(--gold)', color: 'var(--gold)' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#3e2723'} onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}>
+              رابطہ کریں
+            </button>
+          </div>
         </div>
       </section>
 
@@ -62,15 +70,15 @@ export default function Hero() {
           {/* Three Objectives */}
           <div className="space-y-8">
             {/* Objective 1 */}
-            <div className="p-6 rounded-lg shadow-sm border-r-4" style={{ backgroundColor: 'var(--accent)', borderRightColor: 'var(--gold)' }}>
-              <h4 className="text-xl font-bold mb-4 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>تزکیہ نفس</h4>
+            <div className="p-6 rounded-lg border-r-4" style={{ backgroundColor: 'var(--accent)', borderRightColor: 'var(--gold)', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06)' }}>
+              <h4 className="text-xl font-bold mb-4 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>۱۔ تزکیہ نفس</h4>
               <p className="text-base leading-relaxed text-justify font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.8', wordSpacing: '0.08em' }}>
                 تقویٰ، طہارت، اللہ تعالی کے ساتھ شدید محبت، اس کی عظمت و معرفت اور خشیت کے اعلیٰ درجات اور زندگی کے ہر گوشے میں احسانی کیفیت حاصل کرنے کے لیے مسلسل محنت و کوشش کرنا، اور اپنے گردو پیش کو بھی اپنی اصلاح و تربیت اور ایمانی اوصاف و کمالات سے آراستہ ہونے کی جانب توجہ دلانا۔
               </p>
             </div>
 
             {/* Objective 2 */}
-            <div className="p-6 rounded-lg shadow-sm border-r-4" style={{ backgroundColor: 'var(--accent)', borderRightColor: 'var(--gold)' }}>
+            <div className="p-6 rounded-lg border-r-4" style={{ backgroundColor: 'var(--accent)', borderRightColor: 'var(--gold)', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06)' }}>
               <h4 className="text-xl font-bold mb-4 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>۲۔ پورے دین پر پورا عمل</h4>
               <p className="text-base leading-relaxed text-justify font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.8', wordSpacing: '0.08em' }}>
                 عقائد و ایمانیات سے لے کر عبادات، معاملات، معاشرت، حسن اخلاق اور حقوق و آداب تک پورے کے پورے دین پر خود عمل کرنا۔ دنیا کے سامنے دین اپنی کامل اور صحیح شکل میں پیش کرنا اور دوسرے مسلمانوں کو بھی پورے دین پر عمل پیرا ہونے کی ترغیب دینا۔
@@ -78,7 +86,7 @@ export default function Hero() {
             </div>
 
             {/* Objective 3 */}
-            <div className="p-6 rounded-lg shadow-sm border-r-4" style={{ backgroundColor: 'var(--accent)', borderRightColor: 'var(--gold)' }}>
+            <div className="p-6 rounded-lg border-r-4" style={{ backgroundColor: 'var(--accent)', borderRightColor: 'var(--gold)', boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06)' }}>
               <h4 className="text-xl font-bold mb-4 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>۳۔ اتحاد امت</h4>
               <p className="text-base leading-relaxed text-justify font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.8', wordSpacing: '0.08em' }}>
                 امت کے بکھرے ہوئے شیرازے کو دوبارہ یکجا کرنے میں اپنی پوری قوت صرف کرنا، بنیادی عقائد اور فروعی اجتہادی مسائل میں سے ہر ایک کو اپنے اپنے مرتبہ پر رکھنا، اور مختلف دینی سرگرمیوں میں مشغول افراد کے درمیان پھیلی ہوئی نفسیات کو باہمی تعاون میں بدلنا۔
@@ -93,64 +101,64 @@ export default function Hero() {
         <div className="max-w-6xl mx-auto">
           {/* Section Heading */}
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>
-            علمی جہات
+            علمی و عملی جہات
           </h2>
 
           {/* Cards Grid */}
-          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
-            {/* Card 1 - جامعہ زکریا */}
-            <div className="p-6 rounded-3xl h-40 flex flex-col justify-between relative overflow-hidden" style={{ backgroundColor: 'var(--primary-bg)', border: '2px solid var(--secondary)' }}>
-              <div className="absolute top-4 left-4 text-4xl">👤</div>
+          <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-4">
+            {/* Card 1 - تعارف بانی */}
+            <Link href="/intro" className="p-6 rounded-xl h-40 flex flex-col justify-between relative overflow-hidden transition-transform hover:scale-105 cursor-pointer" style={{ backgroundColor: 'var(--accent)' }}>
+              <div className="absolute top-4 left-4 text-4xl" style={{ color: '#3e2723' }}><FaUser /></div>
               <div className="mt-auto text-right">
-                <h3 className="text-xl font-bold mb-1 font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>جامعہ زکریا</h3>
-                <p className="text-xs font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.5' }}>تعلیم قرآن و حدیث</p>
+                <h3 className="text-xl font-bold mb-1 font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>تعارف بانی</h3>
+                <p className="text-xs font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.5' }}>حضرت مفتی سید مختار الدین شاہ صاحب کا تعارف</p>
               </div>
-            </div>
+            </Link>
 
             {/* Card 2 - منہج و نظام */}
-            <Link href="/curriculum" className="p-6 rounded-3xl h-40 flex flex-col justify-between relative overflow-hidden transition-transform hover:scale-105 cursor-pointer" style={{ backgroundColor: 'var(--primary-bg)', border: '2px solid var(--secondary)' }}>
-              <div className="absolute top-4 left-4 text-4xl">💼</div>
+            <Link href="/curriculum" className="p-6 rounded-xl h-40 flex flex-col justify-between relative overflow-hidden transition-transform hover:scale-105 cursor-pointer" style={{ backgroundColor: 'var(--accent)' }}>
+              <div className="absolute top-4 left-4 text-4xl" style={{ color: '#3e2723' }}><FaGraduationCap /></div>
               <div className="mt-auto text-right">
                 <h3 className="text-xl font-bold mb-1 font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>منہج و نظام</h3>
                 <p className="text-xs font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.5' }}>اصلاحی و تربیتی منہج</p>
               </div>
             </Link>
 
-            {/* Card 3 - تعارفِ بانی */}
-            <div className="p-6 rounded-3xl h-40 flex flex-col justify-between relative overflow-hidden" style={{ backgroundColor: 'var(--primary-bg)', border: '2px solid var(--secondary)' }}>
-              <div className="absolute top-4 left-4 text-4xl">👤</div>
+            {/* Card 3 - ملفوظات */}
+            <Link href="/quotes" className="p-6 rounded-xl h-40 flex flex-col justify-between relative overflow-hidden transition-transform hover:scale-105 cursor-pointer" style={{ backgroundColor: 'var(--accent)' }}>
+              <div className="absolute top-4 left-4 text-4xl" style={{ color: '#3e2723' }}><FaQuoteLeft /></div>
               <div className="mt-auto text-right">
-                <h3 className="text-xl font-bold mb-1 font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>تعارفِ بانی</h3>
+                <h3 className="text-xl font-bold mb-1 font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>ملفوظات</h3>
                 <p className="text-xs font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.5' }}>حضرت مفتی سید مختار الدین شاہ صاحب کا تعارف</p>
               </div>
-            </div>
+            </Link>
 
             {/* Card 4 - کتب */}
-            <div className="p-6 rounded-3xl h-40 flex flex-col justify-between relative overflow-hidden" style={{ backgroundColor: 'var(--primary-bg)', border: '2px solid var(--secondary)' }}>
-              <div className="absolute top-4 left-4 text-4xl">📚</div>
+            <Link href="/books" className="p-6 rounded-xl h-40 flex flex-col justify-between relative overflow-hidden transition-transform hover:scale-105 cursor-pointer" style={{ backgroundColor: 'var(--accent)' }}>
+              <div className="absolute top-4 left-4 text-4xl" style={{ color: '#3e2723' }}><FaBook /></div>
               <div className="mt-auto text-right">
                 <h3 className="text-xl font-bold mb-1 font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>کتب</h3>
                 <p className="text-xs font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.5' }}>مفید علمی و اصلاحی کتابیں</p>
               </div>
-            </div>
+            </Link>
 
             {/* Card 5 - ریکارڈنگز */}
-            <div className="p-6 rounded-3xl h-40 flex flex-col justify-between relative overflow-hidden" style={{ backgroundColor: 'var(--primary-bg)', border: '2px solid var(--secondary)' }}>
-              <div className="absolute top-4 left-4 text-4xl">🎙️</div>
+            <Link href="/recordings" className="p-6 rounded-xl h-40 flex flex-col justify-between relative overflow-hidden transition-transform hover:scale-105 cursor-pointer" style={{ backgroundColor: 'var(--accent)' }}>
+              <div className="absolute top-4 left-4 text-4xl" style={{ color: '#3e2723' }}><FaMicrophone /></div>
               <div className="mt-auto text-right">
                 <h3 className="text-xl font-bold mb-1 font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>ریکارڈنگز</h3>
                 <p className="text-xs font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.5' }}>بیانات، کلام اور تلاوت</p>
               </div>
-            </div>
+            </Link>
 
             {/* Card 6 - مراکز و مجالس */}
-            <div className="p-6 rounded-3xl h-40 flex flex-col justify-between relative overflow-hidden" style={{ backgroundColor: 'var(--primary-bg)', border: '2px solid var(--secondary)' }}>
-              <div className="absolute top-4 left-4 text-4xl">🏛️</div>
+            <Link href="/campuses" className="p-6 rounded-xl h-40 flex flex-col justify-between relative overflow-hidden transition-transform hover:scale-105 cursor-pointer" style={{ backgroundColor: 'var(--accent)' }}>
+              <div className="absolute top-4 left-4 text-4xl" style={{ color: '#3e2723' }}><FaBuilding /></div>
               <div className="mt-auto text-right">
                 <h3 className="text-xl font-bold mb-1 font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>مراکز و مجالس</h3>
                 <p className="text-xs font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.5' }}>مختلف مقامات پر مجالس</p>
               </div>
-            </div>
+            </Link>
           </div>
         </div>
       </section>
@@ -167,7 +175,7 @@ export default function Hero() {
             {/* Left Column - Donations */}
             <div className="flex flex-col justify-center">
               {/* Donations Box */}
-              <div className="p-8 rounded-3xl" style={{ backgroundColor: 'var(--accent)', border: '2px solid var(--secondary)' }}>
+              <div className="p-8 rounded-3xl" style={{ backgroundColor: 'var(--accent)', border: '2px solid var(--secondary)', boxShadow: '0 12px 28px rgba(0, 0, 0, 0.15), 0 4px 10px rgba(0, 0, 0, 0.08)' }}>
                 {/* Donations Heading */}
                 <h3 className="text-2xl font-bold mb-6 text-right font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6' }}>عطیات</h3>
 
