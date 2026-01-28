@@ -1,7 +1,7 @@
 'use client';
 
 import { useState } from 'react';
-import { ChevronDown, Search, Download, Share2, Play } from 'lucide-react';
+import { ChevronDown, Search, Play } from 'lucide-react';
 
 export default function RecordingsPage() {
   const [selectedLanguage, setSelectedLanguage] = useState('URDU');
@@ -176,9 +176,6 @@ export default function RecordingsPage() {
                   <th className="px-4 py-4 text-center" style={{ color: '#ffffff', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontWeight: '600' }}>
                     سنیں
                   </th>
-                  <th className="px-4 py-4 text-center" style={{ color: '#ffffff', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontWeight: '600' }}>
-                    محفوظ کریں
-                  </th>
                 </tr>
               </thead>
 
@@ -227,32 +224,6 @@ export default function RecordingsPage() {
                       >
                         <Play size={18} fill="currentColor" />
                       </button>
-                    </td>
-
-                    {/* Download & Share */}
-                    <td className="px-4 py-4 text-center">
-                      <div className="flex items-center justify-center gap-2">
-                        <button
-                          className="p-2 rounded-lg transition-all duration-200 hover:scale-105"
-                          style={{
-                            backgroundColor: 'var(--accent)',
-                            color: 'var(--foreground)'
-                          }}
-                          title="Download"
-                        >
-                          <Download size={16} />
-                        </button>
-                        <button
-                          className="p-2 rounded-lg transition-all duration-200 hover:scale-105"
-                          style={{
-                            backgroundColor: 'var(--accent)',
-                            color: 'var(--foreground)'
-                          }}
-                          title="Share"
-                        >
-                          <Share2 size={16} />
-                        </button>
-                      </div>
                     </td>
                   </tr>
                 ))}
