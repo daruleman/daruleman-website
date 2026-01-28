@@ -60,7 +60,7 @@ export default function Navbar() {
             />
           </div>
           <div className="text-right hidden sm:block">
-            <h1 className="text-lg text-gray-900" style={{ fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.6' }}>دارالایمان والتقویٰ</h1>
+            <h1 className="text-lg text-gray-900" style={{ fontFamily: 'var(--font-gulzar)', letterSpacing: '0.04em', lineHeight: '1.6' }}>دارالایمان والتقویٰ</h1>
           </div>
         </div>
 

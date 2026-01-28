@@ -35,7 +35,7 @@ export default function Hero() {
 
           {/* Buttons */}
           <div className="flex gap-3 justify-center">
-            <Link href="#about" className="border-2 font-semibold pt-2 pb-1 px-6 rounded-xl transition duration-300 cursor-pointer inline-block" style={{ borderColor: 'var(--gold)', color: '#ffffff', backgroundColor: '#3e2723' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#2a1810'} onMouseLeave={(e) => e.target.style.backgroundColor = '#3e2723'}>
+            <Link href="/intro" className="border-2 font-semibold pt-2 pb-1 px-6 rounded-xl transition duration-300 cursor-pointer inline-block" style={{ borderColor: 'var(--gold)', color: '#ffffff', backgroundColor: '#3e2723' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#2a1810'} onMouseLeave={(e) => e.target.style.backgroundColor = '#3e2723'}>
               تعارف پڑھیں
             </Link>
             <button onClick={handleContactScroll} className="border-2 font-semibold pt-2 px-6 rounded-xl transition duration-300 cursor-pointer" style={{ borderColor: 'var(--gold)', color: 'var(--gold)' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#3e2723'} onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}>
@@ -210,7 +210,7 @@ export default function Hero() {
               <div className="mb-8 flex items-start gap-4">
                 <span className="text-2xl">📍</span>
                 <div className="text-left">
-                  <h3 className="text-lg font-bold mb-2 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>مرکز خانقاہ دارالایمان والتقویٰ</h3>
+                  <h3 className="text-lg font-bold mb-2 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.05em', lineHeight: '1.6' }}>مرکز خانقاہ دارالایمان والتقویٰ</h3>
                   <p className="font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.7' }}>کربوغہ شریف، پاکستان</p>
                 </div>
               </div>

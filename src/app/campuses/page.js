@@ -4,137 +4,121 @@ export default function CampusesPage() {
   const centers = {
     "اسلام آباد": [
       {
-        name: "G-10 (Halqa-01)",
-        nameEn: "Markaz Islamabad",
-        emir: "مولانا احمد",
-        phone: "0300-1234567",
-        timing: "روزانہ: بعد نماز عصر",
-        location: "G-10 مرکزی مسجد"
+        name: "جامع مسجد سردار بیگم بہارہ کہو",
+        timing: "بروز جمعرات بعد نماز مغرب",
+        frequency: "ہفتہ وار",
+        phone: "03125379891",
+        location: "بہارہ کہو، اسلام آباد"
       },
       {
-        name: "F-8 (Halqa-02)",
-        nameEn: "Markaz Islamabad",
-        emir: "مولانا زبیر",
-        phone: "0301-2345678",
-        timing: "جمعرات: بعد نماز عشاء",
-        location: "F-8 جامع مسجد"
+        name: "جامعۃ العلوم الاسلامیہ سوہان",
+        timing: "بروز اتوار بعد نماز عصر",
+        frequency: "ہفتہ وار",
+        phone: "+92 300 9352218",
+        location: "سوہان، اسلام آباد"
+      },
+      {
+        name: "H-14 St-208 Jinnah Garden",
+        timing: "بروز بدھ (دوسرا، چوتھا) بعد نماز مغرب",
+        frequency: "پندرہ روزہ",
+        phone: "+92 302 4320525",
+        location: "جناح گارڈن، اسلام آباد"
+      },
+      {
+        name: "خانقاہ دارالایمان والتقوی (جامع مسجد المحمود)",
+        timing: "عصر تا اشراق",
+        frequency: "ہفتہ وار مجلس",
+        day: "ہفتہ",
+        location: "ممتاز سٹی، اسلام آباد"
       }
     ],
-    "لاہور": [
+    "راولپنڈی": [
       {
-        name: "Model Town (Halqa-03)",
-        nameEn: "Markaz Lahore",
-        emir: "مولانا قاسم",
-        phone: "0302-3456789",
-        timing: "اتوار: 10am - 1pm",
-        location: "Model Town B مسجد"
-      },
-      {
-        name: "Iqbal Town (Halqa-04)",
-        nameEn: "Markaz Lahore",
-        emir: "مولانا سلیم",
-        phone: "0303-4567890",
-        timing: "جمعہ: بعد نماز مغرب",
-        location: "Iqbal Town مرکزی مسجد"
+        name: "جامع مسجد بسم اللہ ویسٹریج",
+        timing: "بروز جمعہ بعد نمازِ جمعہ",
+        frequency: "ہفتہ وار",
+        phone: "+92 332 5284770",
+        location: "ویسٹریج، راولپنڈی"
       }
     ]
   };
 
   return (
-    <div style={{ backgroundColor: 'var(--background)' }}>
+    <div style={{ backgroundColor: 'var(--background)', direction: 'rtl' }}>
       {/* Header Section */}
-      <section className="pt-36G-10 (Halqa-01) pb-8 mb-6 px-4" style={{ backgroundColor: 'var(--background)', scrollMarginTop: '80px', paddingTop: '120px' }}>
-        <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mb-2 mt-4" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em', lineHeight: '1.6' }}>
+      <section className="pt-32 pb-12 px-4 text-center">
+        <div className="max-w-5xl mx-auto">
+          <h1 className="text-4xl md:text-6xl font-bold mb-4" 
+              style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', lineHeight: '1.6' }}>
             مراکز و مجالس
           </h1>
-          <p className="text-lg md:text-xl" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em' }}>
+          <p className="text-lg md:text-xl" 
+             style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq' }}>
             ہمارے حلقات مختلف شہروں میں قرآن و سنت کے علم کے فروغ کے لیے منعقد کیے جاتے ہیں۔
           </p>
         </div>
       </section>
 
-      {/* Gold Divider */}
-      <div className="h-1" style={{ backgroundColor: 'var(--gold)' }}></div>
+      <div className="h-1 w-full" style={{ backgroundColor: 'var(--gold)' }}></div>
 
       {/* Centers Content */}
       <section className="py-20 px-4" style={{ backgroundColor: 'var(--primary-bg)' }}>
         <div className="max-w-6xl mx-auto">
-          {/* Pakistan Section */}
-          <div className="mb-16">
-            <h2 className="text-3xl md:text-4xl font-bold mb-12 text-center" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em' }}>
-              پاکستان
-            </h2>
+          {Object.entries(centers).map(([cityName, cityCenters], cityIndex) => (
+            <div key={cityIndex} className="mb-20">
+              <h3 className="text-3xl font-bold mb-10 border-b-2 inline-block pb-2" 
+                  style={{ color: '#3e2723', borderColor: 'var(--gold)', fontFamily: 'Jameel Noori Nastaleeq' }}>
+                {cityName}
+              </h3>
 
-            {/* Cities */}
-            {Object.entries(centers).map((city, cityIndex) => (
-              <div key={cityIndex} className="mb-16">
-                <h3 className="text-2xl md:text-3xl font-bold mb-8" style={{ color: '#3e2723', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>
-                  {city[0]}
-                </h3>
+              <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-8">
+                {cityCenters.map((center, centerIndex) => (
+                  <div
+                    key={centerIndex}
+                    className="p-8 rounded-lg transition-all hover:shadow-2xl"
+                    style={{
+                      backgroundColor: 'var(--accent)',
+                      boxShadow: '0 8px 24px rgba(0, 0, 0, 0.08)',
+                      borderRight: '5px solid var(--gold)',
+                    }}
+                  >
+                    <h4 className="text-xl md:text-2xl font-bold mb-4" 
+                        style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', lineHeight: '1.6' }}>
+                      {center.name}
+                    </h4>
 
-                {/* Halqas Grid */}
-                <div className="flex flex-wrap gap-8">
-                  {city[1].map((halqa, halqaIndex) => (
-                    <div
-                      key={halqaIndex}
-                      className="p-8 rounded-lg flex-1"
-                      style={{
-                        backgroundColor: 'var(--accent)',
-                        boxShadow: '0 8px 16px rgba(0, 0, 0, 0.1), 0 2px 4px rgba(0, 0, 0, 0.06)',
-                        borderRight: '4px solid var(--gold)',
-                        minWidth: '280px'
-                      }}
-                    >
-                      {/* Halqa Name */}
-                      <h4 className="text-xl md:text-2xl font-bold mb-2" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>
-                        {halqa.name}
-                      </h4>
-                      <p className="text-sm mb-6" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>
-                        {halqa.nameEn}
-                      </p>
+                    <div style={{ height: '1px', backgroundColor: 'var(--gold)', marginBottom: '1.5rem', opacity: 0.3 }}></div>
 
-                      {/* Divider */}
-                      <div style={{ height: '1px', backgroundColor: 'var(--gold)', marginBottom: '1.5rem' }}></div>
-
-                      {/* Details */}
-                      <div className="space-y-3">
-                        {/* Emir */}
+                    <div className="space-y-4">
+                      <DetailRow label="وقت" value={center.timing} />
+                      <DetailRow label="تعداد" value={center.frequency} />
+                      {center.day && <DetailRow label="دن" value={center.day} />}
+                      {center.phone && (
                         <div>
-                          <p className="font-semibold" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontSize: '1rem' }}>
-                            <span style={{ color: 'var(--primary)' }}>امیر:</span> {halqa.emir}
+                          <p style={{ color: 'var(--foreground)', fontSize: '1rem' }}>
+                            <span style={{ color: 'var(--primary)', fontWeight: 'bold', fontFamily: 'Jameel Noori Nastaleeq' }}>فون: </span>
+                            <span style={{ fontFamily: 'monospace', direction: 'ltr', display: 'inline-block' }}>{center.phone}</span>
                           </p>
                         </div>
-
-                        {/* Phone */}
-                        <div>
-                          <p className="font-semibold" style={{ color: 'var(--foreground)', letterSpacing: '0.01em', fontSize: '1rem' }}>
-                            <span style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>فون:</span> {halqa.phone}
-                          </p>
-                        </div>
-
-                        {/* Timing */}
-                        <div>
-                          <p className="font-semibold" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontSize: '1rem' }}>
-                            <span style={{ color: 'var(--primary)' }}>وقت:</span> {halqa.timing}
-                          </p>
-                        </div>
-
-                        {/* Location */}
-                        <div>
-                          <p className="font-semibold" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontSize: '1rem' }}>
-                            <span style={{ color: 'var(--primary)' }}>مقام:</span> {halqa.location}
-                          </p>
-                        </div>
-                      </div>
+                      )}
+                      {center.location && <DetailRow label="مقام" value={center.location} />}
                     </div>
-                  ))}
-                </div>
+                  </div>
+                ))}
               </div>
-            ))}
-          </div>
+            </div>
+          ))}
         </div>
       </section>
     </div>
+  );
+}
+
+function DetailRow({ label, value }) {
+  return (
+    <p style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', fontSize: '1.1rem', lineHeight: '1.6' }}>
+      <span style={{ color: 'var(--primary)', fontWeight: 'bold' }}>{label}: </span>
+      {value}
+    </p>
   );
 }

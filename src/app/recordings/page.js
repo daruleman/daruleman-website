@@ -283,7 +283,7 @@ export default function RecordingsPage() {
                 {/* Close Button */}
                 <button
                   onClick={() => setPlayingIndex(null)}
-                  className="flex-shrink-0 text-2xl font-bold transition-all duration-200 hover:scale-110"
+                  className="shrink-0 text-2xl font-bold transition-all duration-200 hover:scale-110"
                   style={{ color: 'var(--foreground)' }}
                 >
                   ×
