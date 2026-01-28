@@ -14,8 +14,8 @@ export default function Hero() {
   };
   return (
     <>
-      <section id="hero" className="min-h-screen flex items-center justify-center px-4" style={{ backgroundColor: 'var(--background)' }}>
-        <div className="max-w-4xl mx-auto text-center">
+      <section id="hero" className="min-h-screen flex items-center justify-center px-4 pb-24" style={{ backgroundColor: 'var(--background)' }}>
+        <div className="max-w-4xl mx-auto text-center mt-12">
           {/* Small text on top */}
           <p className="text-md font-jameel" style={{ color: 'var(--gold-light)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.8', wordSpacing: '0.1em' }}>
             بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم
@@ -24,7 +24,7 @@ export default function Hero() {
           {/* Main Heading - Image */}
           <div className="mb-6 mt-2 flex justify-center">
             <Image 
-              src="/name.png" 
+              src="/name-no.png" 
               alt="دارالایمان والتقویٰ" 
               width={400}
               height={100}
