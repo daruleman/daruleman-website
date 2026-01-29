@@ -40,6 +40,15 @@ export default function CampusesPage() {
         phone: "+92 332 5284770",
         location: "ویسٹریج، راولپنڈی"
       }
+    ],
+    "ہنگو": [
+      {
+        name: "دارالایمان والتقوی کربوغہ شریف",
+        timing: "عصر تا اشراق",
+        frequency: "ماہانہ مجلس",
+        day: "ہر ماہ کا پہلا ہفتہ",
+        location: "کربوغہ شریف، ہنگو"
+      }
     ]
   };
 
@@ -58,8 +67,6 @@ export default function CampusesPage() {
           </p>
         </div>
       </section>
-
-      <div className="h-1 w-full" style={{ backgroundColor: 'var(--gold)' }}></div>
 
       {/* Centers Content */}
       <section className="py-20 px-4" style={{ backgroundColor: 'var(--primary-bg)' }}>

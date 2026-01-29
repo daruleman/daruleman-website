@@ -5,7 +5,7 @@ export default function IntroPage() {
     <div style={{ backgroundColor: 'var(--background)', minHeight: '100vh', paddingTop: '80px' }}>
       {/* Header */}
       <div className="text-center py-20 px-4">
-        <h1 className="text-5xl md:text-7xl font-bold mb-3" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em' }}>
+        <h1 className="text-4xl md:text-5xl font-bold mb-3" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em' }}>
           تعارف بانی
         </h1>
         <h2 className="text-3xl md:text-4xl font-semibold mt-8" style={{ color: 'var(--primary)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.006em' }}>

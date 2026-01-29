@@ -5,19 +5,17 @@ import Link from 'next/link';
 export default function CurriculumPage() {
   return (
     <div style={{ backgroundColor: 'var(--background)', minHeight: '100vh' }}>
-      <div style={{ paddingTop: '120px' }}>
-                {/* Main Intro Box */}
-        <div className="max-w-4xl mx-auto px-4 mb-16">
-          <div style={{ backgroundColor: 'var(--primary-bg)', borderRadius: '12px', padding: '40px', border: '2px solid var(--secondary)' }}>
-            <div className="text-6xl mb-6">💼</div>
-            <h1 className="text-4xl md:text-5xl font-bold mb-6 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6' }}>
-              منہج و نظام
-            </h1>
-            <p className="text-xl font-jameel" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.8' }}>
-              اصلاحی و تربیتی منہج
-            </p>
-          </div>
+      {/* Header Section */}
+      <section className="pt-32 pb-8 px-4" style={{ backgroundColor: 'var(--background)', scrollMarginTop: '80px', paddingTop: '120px' }}>
+        <div className="max-w-5xl mx-auto text-center">
+          <h1 className="text-4xl md:text-6xl font-bold mt-4" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em', lineHeight: '1.6' }}>
+            منہج و نظام
+          </h1>
+          <p className="text-lg md:text-xl" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em' }}>
+            اصلاحی و تربیتی منہج
+          </p>
         </div>
+      </section>
 
         {/* Four Principles Section */}
         <section className="w-full py-16 px-4" style={{ backgroundColor: 'var(--primary-bg)' }}>
@@ -170,7 +168,6 @@ export default function CurriculumPage() {
             </div>
           </div>
         </section>
-      </div>
     </div>
   );
 }

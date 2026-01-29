@@ -88,9 +88,6 @@ export default function RecordingsPage() {
         </div>
       </section>
 
-      {/* Gold Divider */}
-      <div className="h-1" style={{ backgroundColor: 'var(--gold)' }}></div>
-
       {/* Content Section */}
       <section className="py-16 px-4" style={{ backgroundColor: 'var(--primary-bg)' }}>
         <div className="max-w-7xl mx-auto">
