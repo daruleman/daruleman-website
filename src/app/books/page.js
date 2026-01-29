@@ -1,22 +1,8 @@
 'use client';
 
-import { useState } from 'react';
 import Image from 'next/image';
-import PDFViewer from '@/components/PDFViewer';
 
 export default function BooksPage() {
-  const [pdfOpen, setPdfOpen] = useState(false);
-  const [selectedPdf, setSelectedPdf] = useState(null);
-
-  const openPdf = (pdfUrl, bookTitle) => {
-    setSelectedPdf({ url: pdfUrl, title: bookTitle });
-    setPdfOpen(true);
-  };
-
-  const closePdf = () => {
-    setPdfOpen(false);
-    setSelectedPdf(null);
-  };
 
   const books = [
     {
@@ -25,7 +11,6 @@ export default function BooksPage() {
       author: 'حضرت مفتی سید مختار الدین شاہ صاحب',
       price: '1800 روپے',
       whatsappNumber: '03219511901',
-      pdfLink: '/api/pdf?url=https://archive.org/download/Maktaba-Mufti-Syed-Mukhtaruddin-Shah/Imani-Sifaat-Vol-1.pdf',
       description: 'یہ کتاب "ایمانی صفات" دو جلدوں پر مشتمل ایک تفصیلی علمی ذخیرہ ہے جو انسانی کردار، حسنِ اخلاق اور ایمانی ثمرات پر روشنی ڈالتی ہے۔ کتاب میں صداقت، امانت، عدل، تواضع اور رحم دلی جیسی صفات کی اہمیت کو قرآن و حدیث، واقعات اور دلائل کے ساتھ واضح کیا گیا ہے۔ اس میں نہ صرف ان صفات کے حصول کے طریقے بتائے گئے ہیں بلکہ ان کے متضاد (بری خصلتوں) سے نجات پانے کی تدابیر بھی تفصیل سے بیان کی گئی ہیں۔'
     },
     {
@@ -34,7 +19,6 @@ export default function BooksPage() {
       author: 'حضرت مفتی سید مختار الدین شاہ صاحب',
       price: '1800 روپے',
       whatsappNumber: '03219511901',
-      pdfLink: '/books/eimani-sifat.pdf',
       description: 'یہ کتاب "ایمانی صفات" دو جلدوں پر مشتمل ایک تفصیلی علمی ذخیرہ ہے جو انسانی کردار، حسنِ اخلاق اور ایمانی ثمرات پر روشنی ڈالتی ہے۔ کتاب میں صداقت، امانت، عدل، تواضع اور رحم دلی جیسی صفات کی اہمیت کو قرآن و حدیث، واقعات اور دلائل کے ساتھ واضح کیا گیا ہے۔ اس میں نہ صرف ان صفات کے حصول کے طریقے بتائے گئے ہیں بلکہ ان کے متضاد (بری خصلتوں) سے نجات پانے کی تدابیر بھی تفصیل سے بیان کی گئی ہیں۔'
     },
     {
@@ -43,7 +27,6 @@ export default function BooksPage() {
       author: 'حضرت مفتی سید مختار الدین شاہ صاحب',
       price: '1800 روپے',
       whatsappNumber: '03219511901',
-      pdfLink: '/books/eimani-sifat.pdf',
       description: 'یہ کتاب "ایمانی صفات" دو جلدوں پر مشتمل ایک تفصیلی علمی ذخیرہ ہے جو انسانی کردار، حسنِ اخلاق اور ایمانی ثمرات پر روشنی ڈالتی ہے۔ کتاب میں صداقت، امانت، عدل، تواضع اور رحم دلی جیسی صفات کی اہمیت کو قرآن و حدیث، واقعات اور دلائل کے ساتھ واضح کیا گیا ہے۔ اس میں نہ صرف ان صفات کے حصول کے طریقے بتائے گئے ہیں بلکہ ان کے متضاد (بری خصلتوں) سے نجات پانے کی تدابیر بھی تفصیل سے بیان کی گئی ہیں۔'
     },
     {
@@ -52,7 +35,6 @@ export default function BooksPage() {
       author: 'حضرت مفتی سید مختار الدین شاہ صاحب',
       price: '1800 روپے',
       whatsappNumber: '03219511901',
-      pdfLink: '/books/eimani-sifat.pdf',
       description: 'یہ کتاب "ایمانی صفات" دو جلدوں پر مشتمل ایک تفصیلی علمی ذخیرہ ہے جو انسانی کردار، حسنِ اخلاق اور ایمانی ثمرات پر روشنی ڈالتی ہے۔ کتاب میں صداقت، امانت، عدل، تواضع اور رحم دلی جیسی صفات کی اہمیت کو قرآن و حدیث، واقعات اور دلائل کے ساتھ واضح کیا گیا ہے۔ اس میں نہ صرف ان صفات کے حصول کے طریقے بتائے گئے ہیں بلکہ ان کے متضاد (بری خصلتوں) سے نجات پانے کی تدابیر بھی تفصیل سے بیان کی گئی ہیں۔'
     },
     {
@@ -61,7 +43,6 @@ export default function BooksPage() {
       author: 'حضرت مفتی سید مختار الدین شاہ صاحب',
       price: '1800 روپے',
       whatsappNumber: '03219511901',
-      pdfLink: '/books/eimani-sifat.pdf',
       description: 'یہ کتاب "ایمانی صفات" دو جلدوں پر مشتمل ایک تفصیلی علمی ذخیرہ ہے جو انسانی کردار، حسنِ اخلاق اور ایمانی ثمرات پر روشنی ڈالتی ہے۔ کتاب میں صداقت، امانت، عدل، تواضع اور رحم دلی جیسی صفات کی اہمیت کو قرآن و حدیث، واقعات اور دلائل کے ساتھ واضح کیا گیا ہے۔ اس میں نہ صرف ان صفات کے حصول کے طریقے بتائے گئے ہیں بلکہ ان کے متضاد (بری خصلتوں) سے نجات پانے کی تدابیر بھی تفصیل سے بیان کی گئی ہیں۔'
     }
   ];
@@ -133,7 +114,6 @@ export default function BooksPage() {
 
                   {/* Read PDF Button */}
                   <button
-                    onClick={() => openPdf(book.pdfLink, book.title)}
                     className="flex-1 py-2 md:py-3 rounded-lg font-semibold text-center text-xs md:text-sm transition-transform hover:scale-105 font-jameel border-2"
                     style={{ borderColor: 'var(--gold)', color: 'var(--primary)', backgroundColor: 'transparent', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}
                   >
@@ -145,14 +125,6 @@ export default function BooksPage() {
           ))}
         </div>
       </div>
-
-      {/* PDF Viewer Modal */}
-      <PDFViewer 
-        isOpen={pdfOpen} 
-        onClose={closePdf} 
-        pdfUrl={selectedPdf?.url} 
-        bookTitle={selectedPdf?.title}
-      />
     </div>
   );
 }
