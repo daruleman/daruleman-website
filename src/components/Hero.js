@@ -30,7 +30,7 @@ export default function Hero() {
           </p>
 
           {/* Main Heading - Image */}
-          <div className="mb-6 mt-2 flex justify-center">
+          {/* <div className="mb-6 mt-2 flex justify-center">
             <Image 
               src="/name-no.png" 
               alt="دارالایمان والتقویٰ" 
@@ -39,12 +39,12 @@ export default function Hero() {
               className="w-auto h-auto"
               priority
             />
-          </div>
+          </div> */}
           
           {/* Main Heading - Text */}
-          {/* <h1 className="text-5xl md:text-7xl font-bold text-center mb-6" style={{ color: 'var(--gold)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>
+          <h1 className="text-5xl md:text-8xl font-bold text-center mb-6" style={{ color: '#000000', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.02em' }}>
             دارالایمان والتقویٰ
-          </h1> */}
+          </h1>
 
           {/* Buttons */}
           <div className="flex gap-3 justify-center">
