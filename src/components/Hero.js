@@ -54,7 +54,7 @@ export default function Hero() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4" style={{ backgroundColor: 'var(--primary-bg)' }}>
+      <section id="about" className="py-16 px-4" style={{ backgroundColor: 'var(--background)' }}>
         <div className="max-w-5xl mx-auto">
           {/* Main Heading */}
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>
@@ -172,7 +172,7 @@ export default function Hero() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4" style={{ backgroundColor: 'var(--primary-bg)' }}>
+      <section id="contact" className="py-16 px-4" style={{ backgroundColor: 'var(--background)' }}>
         <div className="max-w-6xl mx-auto">
           {/* Main Heading */}
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>
