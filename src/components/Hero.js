@@ -22,10 +22,10 @@ export default function Hero() {
   };
   return (
     <>
-      <section id="hero" className="min-h-screen flex items-center justify-center px-4 pb-24" style={{ backgroundColor: 'var(--background)' }}>
+      <section id="hero" className="min-h-screen flex items-center justify-center px-4 pb-24 bg-gray-50">
         <div className="max-w-4xl mx-auto text-center mt-12">
           {/* Small text on top */}
-          <p className="text-md font-jameel" style={{ color: 'var(--gold-light)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.8', wordSpacing: '0.1em' }}>
+          <p className="text-md font-jameel mb-6" style={{ color: 'var(--gold-light)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.8', wordSpacing: '0.1em' }}>
             بِسْمِ اللهِ الرَّحْمٰنِ الرَّحِيْم
           </p>
 
@@ -40,10 +40,15 @@ export default function Hero() {
               priority
             />
           </div>
+          
+          {/* Main Heading - Text */}
+          {/* <h1 className="text-5xl md:text-7xl font-bold text-center mb-6" style={{ color: 'var(--gold)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>
+            دارالایمان والتقویٰ
+          </h1> */}
 
           {/* Buttons */}
           <div className="flex gap-3 justify-center">
-            <button onClick={handleAboutScroll} className="border-2 font-semibold pt-2 pb-1 px-6 rounded-xl transition duration-300 cursor-pointer inline-block" style={{ borderColor: 'var(--gold)', color: '#ffffff', backgroundColor: '#3e2723' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#2a1810'} onMouseLeave={(e) => e.target.style.backgroundColor = '#3e2723'}>
+            <button onClick={handleAboutScroll} className="border-2 font-semibold pt-2 pb-1 px-6 rounded-xl transition duration-300 cursor-pointer inline-block" style={{ borderColor: 'var(--gold)', color: '#ffffff', backgroundColor: 'var(--gold)' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#d4af37'} onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--gold)'}>
               تعارف پڑھیں
             </button>
             <button onClick={handleContactScroll} className="border-2 font-semibold pt-2 px-6 rounded-xl transition duration-300 cursor-pointer" style={{ borderColor: 'var(--gold)', color: 'var(--gold)' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#3e2723'} onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}>
@@ -54,7 +59,7 @@ export default function Hero() {
       </section>
 
       {/* About Section */}
-      <section id="about" className="py-16 px-4" style={{ backgroundColor: 'var(--background)' }}>
+      <section id="about" className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           {/* Main Heading */}
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-8 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>
@@ -105,11 +110,11 @@ export default function Hero() {
       </section>
 
       {/* Scientific Pursuits Section */}
-      <section id="sections" className="py-16 px-4" style={{ backgroundColor: 'var(--background)' }}>
+      <section id="sections" className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {/* Section Heading */}
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>
-            علمی و عملی جہات
+            شعبہ جات
           </h2>
 
           {/* Cards Grid */}
@@ -172,7 +177,7 @@ export default function Hero() {
       </section>
 
       {/* Contact Section */}
-      <section id="contact" className="py-16 px-4" style={{ backgroundColor: 'var(--background)' }}>
+      <section id="contact" className="py-16 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {/* Main Heading */}
           <h2 className="text-3xl md:text-4xl font-bold text-center mb-16 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em', lineHeight: '1.6', wordSpacing: '0.12em' }}>
