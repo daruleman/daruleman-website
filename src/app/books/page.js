@@ -55,7 +55,7 @@ export default function BooksPage() {
           <h1 className="text-4xl md:text-5xl font-bold mb-4 text-center" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.05em' }}>
             کتب
           </h1>
-          <p className="text-lg text-center font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>
+          <p className="text-lg text-center font-jameel" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>
             مفید علمی و اصلاحی کتابیں
           </p>
         </div>

@@ -21,20 +21,16 @@ export default function Navbar() {
         window.scrollTo({ top: offset, behavior: 'smooth' });
       }
     } else {
-      // If on another page, navigate to home and then scroll
-      if (sectionId === 'about') {
-        router.push('/about');
-      } else {
-        router.push('/');
-        // Navigate to home first, then scroll to section
-        setTimeout(() => {
-          const element = document.getElementById(sectionId);
-          if (element) {
-            const offset = element.offsetTop - 80;
-            window.scrollTo({ top: offset, behavior: 'smooth' });
-          }
-        }, 100);
-      }
+      // If on another page, navigate to home with hash and then scroll
+      router.push(`/#${sectionId}`);
+      // Scroll after a short delay to ensure the page has loaded
+      setTimeout(() => {
+        const element = document.getElementById(sectionId);
+        if (element) {
+          const offset = element.offsetTop - 80;
+          window.scrollTo({ top: offset, behavior: 'smooth' });
+        }
+      }, 300);
     }
   };
 

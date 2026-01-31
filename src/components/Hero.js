@@ -194,24 +194,24 @@ export default function Hero() {
 
                 {/* Account Title */}
                 <div className="mb-6 text-end pb-6 border-b-2" style={{ borderColor: 'var(--secondary)' }}>
-                  <p className="text-sm mb-2 text-start font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>اکاؤنٹ ٹائٹل</p>
-                  <p className="text-lg font-semibold" style={{ color: 'var(--primary)' }}>Muhammad Jafar</p>
+                  <p className="text-sm mb-2 text-start font-jameel" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>اکاؤنٹ ٹائٹل</p>
+                  <p className="text-lg font-semibold" style={{ color: '#000000' }}>Muhammad Jafar</p>
                 </div>
 
                 {/* Bank Details */}
                 <div className="mb-6 text-end pb-6 border-b-2" style={{ borderColor: 'var(--secondary)' }}>
-                  <p className="text-sm mb-2 text-start font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>بینک</p>
-                  <p className="text-base font-semibold" style={{ color: 'var(--primary)' }}>Meezan Bank, Doaba Branch</p>
+                  <p className="text-sm mb-2 text-start font-jameel" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>بینک</p>
+                  <p className="text-base font-semibold" style={{ color: '#000000' }}>Meezan Bank, Doaba Branch</p>
                 </div>
 
                 {/* IBAN */}
                 <div className="mb-6 text-end pb-6 border-b-2" style={{ borderColor: 'var(--secondary)' }}>
-                  <p className="text-sm mb-2 font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>IBAN</p>
-                  <p className="text-sm font-mono" style={{ color: 'var(--primary)' }}>PK31MEZN0026510107239161</p>
+                  <p className="text-sm mb-2 font-jameel" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>IBAN</p>
+                  <p className="text-sm font-mono" style={{ color: '#000000' }}>PK31MEZN0026510107239161</p>
                 </div>
 
                 {/* Blessing Message */}
-                <p className="font-jameel text-center" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.8', fontSize: '0.95rem' }}>
+                <p className="font-jameel text-center" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.8', fontSize: '0.95rem' }}>
                   اللہ تعالیٰ آپ کو اس کا بہترین اجر عطا فرمائے
                 </p>
               </div>
@@ -225,8 +225,8 @@ export default function Hero() {
                   <FaBuilding />
                 </div>
                 <div className="text-right">
-                  <h3 className="text-lg font-bold mb-2 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>مرکز خانقاہ دارالایمان والتقویٰ</h3>
-                  <p className="font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.7' }}>کربوغہ شریف، پاکستان</p>
+                  <h3 className="text-lg font-bold mb-2 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.05em', lineHeight: '1.6' }}>مرکز خانقاہ دارالایمان والتقویٰ</h3>
+                  <p className="font-jameel" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.7' }}>کربوغہ شریف، پاکستان</p>
                 </div>
               </div>
 

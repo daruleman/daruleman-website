@@ -11,7 +11,7 @@ export default function CurriculumPage() {
           <h1 className="text-4xl md:text-6xl font-bold mt-4" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em', lineHeight: '1.6' }}>
             منہج و نظام
           </h1>
-          <p className="text-lg md:text-xl" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em' }}>
+          <p className="text-lg md:text-xl" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em' }}>
             اصلاحی و تربیتی منہج
           </p>
         </div>
@@ -134,7 +134,7 @@ export default function CurriculumPage() {
         {/* Methodology Section */}
         <section className="w-full py-16 px-4">
           <div className="max-w-4xl mx-auto">
-            <h2 className="text-3xl md:text-4xl font-bold text-right font-jameel mb-12" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em' }}>
+            <h2 className="text-3xl md:text-4xl font-bold text-right font-jameel mb-12" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em' }}>
               اصلاحی و تربیتی منہج
             </h2>
 
