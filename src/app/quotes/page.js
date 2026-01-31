@@ -64,21 +64,21 @@ export default function QuotesPage() {
   const languages = ['اردو', 'English', 'العربية'];
 
   return (
-    <div style={{ backgroundColor: 'var(--background)', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
+    <div className="bg-gray-50 min-h-screen flex flex-col">
       {/* Header Section */}
-      <section className="pt-32 px-4" style={{ backgroundColor: 'var(--background)', scrollMarginTop: '80px', paddingTop: '120px' }}>
+      <section className="pt-32 px-4 bg-gray-50" style={{ scrollMarginTop: '80px', paddingTop: '120px' }}>
         <div className="max-w-5xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold mt-4" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em', lineHeight: '1.6' }}>
             ملفوظات
           </h1>
-          <p className="text-lg md:text-xl" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em' }}>
+          <p className="text-lg md:text-xl" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em' }}>
             حضرت مفتی سید مختار الدین شاہ صاحب کی حکمت اور روحانی تعلیمات
           </p>
         </div>
       </section>
 
       {/* Language Selector */}
-      <section className="py-16 px-4" style={{ backgroundColor: 'var(--background)' }}>
+      <section className="py-16 px-4 bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <div className="flex gap-3 justify-center flex-wrap">
             {languages.map((lang) => (
@@ -104,7 +104,7 @@ export default function QuotesPage() {
       </section>
 
       {/* Quotations Grid */}
-      <section className="py-20 px-4 flex-grow" style={{ backgroundColor: 'var(--background)' }}>
+      <section className="py-20 px-4 flex-grow bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredQuotes.map((quote, index) => (

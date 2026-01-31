@@ -61,7 +61,7 @@ export default function RecordingsPage() {
     }
   ];
 
-  const languages = ['PUNJABI', 'SINDHI', 'TURKISH', 'FARSI', 'ARABIC', 'PASHTO', 'ENGLISH', 'URDU'];
+  const languages = ['ARABIC', 'PASHTO', 'ENGLISH', 'URDU'];
 
   const filteredRecordings = allRecordings
     .filter(rec => rec.language === selectedLanguage)
@@ -78,9 +78,9 @@ export default function RecordingsPage() {
     });
 
   return (
-    <div style={{ backgroundColor: 'var(--background)' }}>
+    <div className="bg-gray-50">
       {/* Header Section */}
-      <section className="pt-40 pb-8 px-4" style={{ backgroundColor: 'var(--background)', scrollMarginTop: '80px', paddingTop: '120px' }}>
+      <section className="pt-40 pb-8 px-4 bg-gray-50" style={{ scrollMarginTop: '80px', paddingTop: '120px' }}>
         <div className="max-w-7xl mx-auto text-center">
           <h1 className="text-4xl md:text-6xl font-bold" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em', lineHeight: '1.6' }}>
             حمد و نعت و کلام

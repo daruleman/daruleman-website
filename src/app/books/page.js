@@ -48,7 +48,7 @@ export default function BooksPage() {
   ];
 
   return (
-    <div className="min-h-screen py-20 px-4" style={{ backgroundColor: 'var(--background)' }}>
+    <div className="min-h-screen py-20 px-4 bg-gray-50">
       <div className="max-w-7xl mx-auto">
         {/* Header */}
         <div className="mb-16 mt-20">

@@ -53,23 +53,23 @@ export default function CampusesPage() {
   };
 
   return (
-    <div style={{ backgroundColor: 'var(--background)', direction: 'rtl' }}>
+    <div className="bg-gray-50" style={{ direction: 'rtl' }}>
       {/* Header Section */}
-      <section className="pt-32 px-4 text-center">
+      <section className="pt-32 px-4 text-center bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4" 
               style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', lineHeight: '1.6' }}>
             مراکز و مجالس
           </h1>
           <p className="text-lg md:text-xl" 
-             style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq' }}>
+             style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq' }}>
             تعلیمِ قرآن و سنت کے لیے شہر بہ شہر ہمارے علمی حلقات کا اہتمام کیا جاتا ہے۔
           </p>
         </div>
       </section>
 
       {/* Centers Content */}
-      <section className="py-14 px-4" style={{ backgroundColor: 'var(--background)' }}>
+      <section className="py-14 px-4 bg-gray-50">
         <div className="max-w-6xl mx-auto">
           {Object.entries(centers).map(([cityName, cityCenters], cityIndex) => (
             <div key={cityIndex} className="mb-20">
