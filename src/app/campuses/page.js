@@ -55,7 +55,7 @@ export default function CampusesPage() {
   return (
     <div style={{ backgroundColor: 'var(--background)', direction: 'rtl' }}>
       {/* Header Section */}
-      <section className="pt-32 pb-12 px-4 text-center">
+      <section className="pt-32 px-4 text-center">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4" 
               style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', lineHeight: '1.6' }}>
@@ -63,18 +63,18 @@ export default function CampusesPage() {
           </h1>
           <p className="text-lg md:text-xl" 
              style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq' }}>
-            ہمارے حلقات مختلف شہروں میں قرآن و سنت کے علم کے فروغ کے لیے منعقد کیے جاتے ہیں۔
+            تعلیمِ قرآن و سنت کے لیے شہر بہ شہر ہمارے علمی حلقات کا اہتمام کیا جاتا ہے۔
           </p>
         </div>
       </section>
 
       {/* Centers Content */}
-      <section className="py-20 px-4" style={{ backgroundColor: 'var(--primary-bg)' }}>
+      <section className="py-14 px-4" style={{ backgroundColor: 'var(--background)' }}>
         <div className="max-w-6xl mx-auto">
           {Object.entries(centers).map(([cityName, cityCenters], cityIndex) => (
             <div key={cityIndex} className="mb-20">
-              <h3 className="text-3xl font-bold mb-10 border-b-2 inline-block pb-2" 
-                  style={{ color: '#3e2723', borderColor: 'var(--gold)', fontFamily: 'Jameel Noori Nastaleeq' }}>
+              <h3 className="text-3xl font-bold mb-10 inline-block pb-2" 
+                  style={{ color: '#3e2723', fontFamily: 'Jameel Noori Nastaleeq' }}>
                 {cityName}
               </h3>
 

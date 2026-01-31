@@ -2,7 +2,7 @@
 
 import Link from 'next/link';
 import Image from 'next/image';
-import { FaWhatsapp, FaFacebook, FaYoutube, FaUser, FaQuoteLeft, FaGraduationCap, FaBook, FaMicrophone, FaBuilding } from 'react-icons/fa';
+import { FaWhatsapp, FaFacebook, FaYoutube, FaUser, FaQuoteLeft, FaGraduationCap, FaBook, FaMicrophone, FaBuilding, FaMapMarker, FaPhone } from 'react-icons/fa';
 
 export default function Hero() {
   const handleAboutScroll = () => {
@@ -68,7 +68,7 @@ export default function Hero() {
 
           {/* Description */}
           <p className="text-base md:text-lg leading-relaxed text-justify mb-12 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.8', wordSpacing: '0.08em' }}>
-            تحریک ایمان و تقویٰ ایمان کی آبیاری، تقویٰ، تواضع، خدمت خلق، خیر خواہی، ایثار و ہمدردی، دعوت و تبلیغ، جہاد فی سبیل اللہ، حسن خُلُق، اتحاد امت اور اعلائے کلمۃ اللہ جیسے عظیم مقاصد اور ایمانی اوصاف و ثمرات حاصل کرنے کی مسلسل اور دائمی جد وجہد کا نام ہے۔ اس عظیم کوشش کی ابتدا مختار الامۃ حضرت سید مفتی مختار الدین شاہ صاحب دامت برکاتہم العالیہ نے کربوغہ شریف کی سر زمین پر ہی فرمائی۔
+           تحریکِ ایمان و تقویٰ ایک مسلسل اور دائمی جدوجہد کا نام ہے، جس کا مقصد ایمان کی آبیاری، تقویٰ، تواضع اور حسنِ خُلُق جیسے اوصاف پیدا کرنا ہے۔ یہ تحریک خدمتِ خلق، خیر خواہی اور ایثار و ہمدردی کے جذبے کے ساتھ ساتھ دعوت و تبلیغ، جہاد فی سبیل اللہ، اتحادِ امت اور اعلائے کلمۃ اللہ جیسے عظیم مقاصد کے حصول کے لیے کوشاں ہے۔ اس مبارک مشن کا آغاز مختار الامۃ حضرت سید مفتی مختار الدین شاہ صاحب رحمہ اللہ  نے کربوغہ شریف کی بامراد سرزمین سے فرمایا۔
           </p>
 
           {/* Objectives Heading */}
@@ -76,7 +76,7 @@ export default function Hero() {
             مقاصد
           </h3>
 
-          <p className="text-base md:text-lg text-center mb-10 font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.7', wordSpacing: '0.1em' }}>
+          <p className="text-base md:text-lg text-center mb-10 font-jameel" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.7', wordSpacing: '0.1em' }}>
             اس ہدف کے حصول کے لیے یہ تحریک تین مقاصد پر کام کرتی ہے:
           </p>
 
@@ -218,34 +218,47 @@ export default function Hero() {
             </div>
 
             {/* Right Column - Contact Info */}
-            <div className="flex flex-col justify-center" dir="ltr">
+            <div className="flex flex-col justify-center" dir="rtl">
               {/* Address */}
-              <div className="mb-8 flex items-start gap-4">
-                <span className="text-2xl">📍</span>
-                <div className="text-left">
-                  <h3 className="text-lg font-bold mb-2 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.05em', lineHeight: '1.6' }}>مرکز خانقاہ دارالایمان والتقویٰ</h3>
+              <div className="mb-8 flex items-start gap-4 flex-row-reverse">
+                <div className="text-3xl transition-transform hover:scale-110 flex-shrink-0" style={{ color: 'var(--gold)' }}>
+                  <FaBuilding />
+                </div>
+                <div className="text-right">
+                  <h3 className="text-lg font-bold mb-2 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em', lineHeight: '1.6' }}>مرکز خانقاہ دارالایمان والتقویٰ</h3>
                   <p className="font-jameel" style={{ color: 'var(--warm-brown)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.7' }}>کربوغہ شریف، پاکستان</p>
                 </div>
               </div>
 
-              {/* Phone Numbers */}
-              <div className="mb-8 flex items-start gap-4">
-                <span className="text-2xl">📞</span>
-                <div className="text-left">
-                  <p className="mb-2 font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.6' }}>+92-328-0899651</p>
-                  <p className="font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.6' }}>+92-317-7930224</p>
+              {/* Phone Number 1 */}
+              <div className="mb-8 flex items-start gap-4 flex-row-reverse">
+                <div className="text-3xl transition-transform hover:scale-110 flex-shrink-0" style={{ color: 'var(--gold)', transform: 'scaleX(-1)' }}>
+                  <FaPhone />
+                </div>
+                <div className="text-right">
+                  <p className="font-jameel text-base" dir="ltr" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.6' }}>+92-328-0899651</p>
+                </div>
+              </div>
+
+              {/* Phone Number 2 */}
+              <div className="mb-8 flex items-start gap-4 flex-row-reverse">
+                <div className="text-3xl transition-transform hover:scale-110 flex-shrink-0" style={{ color: 'var(--gold)' }}>
+                  <FaWhatsapp />
+                </div>
+                <div className="text-right">
+                  <p className="font-jameel text-base" dir="ltr" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', lineHeight: '1.6' }}>+92-317-7930224</p>
                 </div>
               </div>
 
               {/* Social Media Icons */}
-              <div className="flex gap-4">
-                <a href="https://api.whatsapp.com/send/?phone=923177930224&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--warm-brown)' }} title="WhatsApp">
+              <div className="flex gap-4 justify-end">
+                <a href="https://api.whatsapp.com/send/?phone=923177930224&text&type=phone_number&app_absent=0" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--gold)' }} title="WhatsApp" onMouseEnter={(e) => e.target.style.backgroundColor = '#d4af37'} onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--gold)'}>
                   <FaWhatsapp />
                 </a>
-                <a href="https://www.facebook.com/markazdaruleman" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--warm-brown)' }} title="Facebook">
+                <a href="https://www.facebook.com/markazdaruleman" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--gold)' }} title="Facebook" onMouseEnter={(e) => e.target.style.backgroundColor = '#d4af37'} onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--gold)'}>
                   <FaFacebook />
                 </a>
-                <a href="https://www.youtube.com/@markazdarulemanofficial" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--primary)' }} title="YouTube">
+                <a href="https://www.youtube.com/@markazdarulemanofficial" target="_blank" rel="noopener noreferrer" className="w-12 h-12 rounded-full flex items-center justify-center text-white text-xl transition-transform hover:scale-110" style={{ backgroundColor: 'var(--gold)' }} title="YouTube" onMouseEnter={(e) => e.target.style.backgroundColor = '#d4af37'} onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--gold)'}>
                   <FaYoutube />
                 </a>
               </div>

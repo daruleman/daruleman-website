@@ -4,7 +4,7 @@
   /* Light Mode Colors */
   --background: #F9F7F4;
   --foreground: #2C2622;
-  --primary-bg: #fffaef;
+  --primary-bg: #D8D3C8;
   
   /* Gold & Accent Colors */
   --gold: #876442;
@@ -13,8 +13,8 @@
   
   /* Primary & Secondary */
   --primary: #5C3F22;
-  --secondary: #E3D8C9;
-  --accent: #F3EDE2;
+  --secondary: #D8D3C8;
+  --accent: #ffffff;
 }
 
 @theme inline {

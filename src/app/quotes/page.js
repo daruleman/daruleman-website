@@ -7,158 +7,56 @@ export default function QuotesPage() {
 
   const quotations = [
     // Urdu Quotations (10)
-    {
-      text: "روح کی خوراک تقویٰ ہے اور روح کی شفا ذکر اللہ میں ہے۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    {
-      text: "نفس کی اصلاح کے بغیر دنیا اور آخرت کی کامیابی ممکن نہیں۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    {
-      text: "علم بغیر عمل کے ایسا ہے جیسے ایک درخت جس میں پھل نہ ہوں۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    {
-      text: "اخلاص کے ساتھ کیا گیا کام چھوٹا ہو تو بھی بڑا ہے۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    {
-      text: "دل کی صفائی سب سے بڑی دولت ہے جو انسان حاصل کر سکتا ہے۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    {
-      text: "تقویٰ کا مطلب یہ نہیں کہ دنیا سے بھاگ جاؤ بلکہ دنیا میں رہتے ہوئے اللہ سے جڑے رہو۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    {
-      text: "صبر اور شکر میں وہ طاقت ہے جو پہاڑ کو بھی سر کر سکتی ہے۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    {
-      text: "بندہ جب اپنے رب کو صحیح طریقے سے پناہ دیتا ہے تو کوئی طاقت اسے نقصان نہیں پہنچا سکتی۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    {
-      text: "حقیقی زندگی وہ ہے جو اللہ کی محبت میں بسر ہو۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    {
-      text: "نفس جب صاف ہو جائے تو حق دیکھنے کے لیے آنکھوں کی ضرورت نہیں۔",
-      author: "حضرت مفتی سید مختار الدین شاہ صاحب",
-      language: "اردو"
-    },
-    // English Quotations (10)
-    {
-      text: "The heart that is connected to Allah is never broken.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    {
-      text: "Purification of the soul is the greatest wealth a person can acquire.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    {
-      text: "True knowledge is that which transforms the soul and purifies the heart.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    {
-      text: "Sincerity in action, though small, is greater than greatness without sincerity.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    {
-      text: "The remembrance of Allah is the medicine for the heart and the light for the soul.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    {
-      text: "Taqwa is not about running away from the world, but living in it with consciousness of Allah.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    {
-      text: "Patience and gratitude possess the strength to move mountains.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    {
-      text: "When the servant seeks true refuge in the Lord, no power can harm him.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    {
-      text: "True life is the life lived in the love and service of Allah.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    {
-      text: "When the soul is purified, one needs no eyes to see the truth.",
-      author: "Mufti Syed Mukhtar ud-Din Shah Sahab",
-      language: "English"
-    },
-    // Arabic Quotations (10)
-    {
-      text: "إن التقوى هي أساس كل شيء جميل وحق.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    },
-    {
-      text: "طهارة القلب هي أغلى شيء يملكه الإنسان.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    },
-    {
-      text: "العلم بدون عمل كالنور بدون حرارة.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    },
-    {
-      text: "الإخلاص في العمل يجعل الصغير كبيراً.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    },
-    {
-      text: "ذكر الله هو غذاء الروح وشفاء القلب.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    },
-    {
-      text: "التقوى ليست الهروب من العالم بل العيش فيه برقابة الله.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    },
-    {
-      text: "الصبر والشكر فيهما قوة تحرك الجبال.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    },
-    {
-      text: "من توكل على الله حق التوكل لم يستطع أحد أن يضره.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    },
-    {
-      text: "الحياة الحقيقية هي التي تعيش في حب وخدمة الله.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    },
-    {
-      text: "إذا طهر القلب لا يحتاج إلى أعين لرؤية الحق.",
-      author: "مفتي سيد مختار الدين شاه صاحب",
-      language: "العربية"
-    }
+    // {
+    //   text: "روح کی خوراک تقویٰ ہے اور روح کی شفا ذکر اللہ میں ہے۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
+    // {
+    //   text: "نفس کی اصلاح کے بغیر دنیا اور آخرت کی کامیابی ممکن نہیں۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
+    // {
+    //   text: "علم بغیر عمل کے ایسا ہے جیسے ایک درخت جس میں پھل نہ ہوں۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
+    // {
+    //   text: "اخلاص کے ساتھ کیا گیا کام چھوٹا ہو تو بھی بڑا ہے۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
+    // {
+    //   text: "دل کی صفائی سب سے بڑی دولت ہے جو انسان حاصل کر سکتا ہے۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
+    // {
+    //   text: "تقویٰ کا مطلب یہ نہیں کہ دنیا سے بھاگ جاؤ بلکہ دنیا میں رہتے ہوئے اللہ سے جڑے رہو۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
+    // {
+    //   text: "صبر اور شکر میں وہ طاقت ہے جو پہاڑ کو بھی سر کر سکتی ہے۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
+    // {
+    //   text: "بندہ جب اپنے رب کو صحیح طریقے سے پناہ دیتا ہے تو کوئی طاقت اسے نقصان نہیں پہنچا سکتی۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
+    // {
+    //   text: "حقیقی زندگی وہ ہے جو اللہ کی محبت میں بسر ہو۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
+    // {
+    //   text: "نفس جب صاف ہو جائے تو حق دیکھنے کے لیے آنکھوں کی ضرورت نہیں۔",
+    //   author: "حضرت مفتی سید مختار الدین شاہ صاحب",
+    //   language: "اردو"
+    // },
   ];
 
   const filteredQuotes = quotations.filter(q => q.language === selectedLanguage);
@@ -166,7 +64,7 @@ export default function QuotesPage() {
   const languages = ['اردو', 'English', 'العربية'];
 
   return (
-    <div style={{ backgroundColor: 'var(--background)' }}>
+    <div style={{ backgroundColor: 'var(--background)', minHeight: '100vh', display: 'flex', flexDirection: 'column' }}>
       {/* Header Section */}
       <section className="pt-32 px-4" style={{ backgroundColor: 'var(--background)', scrollMarginTop: '80px', paddingTop: '120px' }}>
         <div className="max-w-5xl mx-auto text-center">
@@ -206,7 +104,7 @@ export default function QuotesPage() {
       </section>
 
       {/* Quotations Grid */}
-      <section className="py-20 px-4" style={{ backgroundColor: 'var(--primary-bg)' }}>
+      <section className="py-20 px-4 flex-grow" style={{ backgroundColor: 'var(--background)' }}>
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredQuotes.map((quote, index) => (
