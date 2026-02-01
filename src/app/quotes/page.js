@@ -71,9 +71,6 @@ export default function QuotesPage() {
           <h1 className="text-4xl md:text-6xl font-bold mt-4" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em', lineHeight: '1.6' }}>
             ملفوظات
           </h1>
-          <p className="text-lg md:text-xl" style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.06em' }}>
-            حضرت مفتی سید مختار الدین شاہ صاحب کی حکمت اور روحانی تعلیمات
-          </p>
         </div>
       </section>
 
@@ -104,7 +101,7 @@ export default function QuotesPage() {
       </section>
 
       {/* Quotations Grid */}
-      <section className="py-20 px-4 flex-grow bg-gray-50">
+      <section className="py-20 px-4 grow bg-gray-50">
         <div className="max-w-6xl mx-auto">
           <div className="grid grid-cols-1 md:grid-cols-2 gap-8">
             {filteredQuotes.map((quote, index) => (
