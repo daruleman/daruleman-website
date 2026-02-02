@@ -73,7 +73,7 @@ export default function BooksPage() {
           {books.map((book) => (
             <div key={book.id} className="rounded-lg border border-gray-200 overflow-hidden flex flex-col md:flex-row h-fit" style={{ backgroundColor: 'var(--accent)' }}>
               {/* Book Image - Top on mobile, Left on desktop */}
-              <div className="relative w-full md:w-1/3 h-48 md:h-auto bg-gray-100 md:order-first flex-shrink-0">
+              <div className="relative w-full md:w-1/3 h-48 md:h-auto bg-gray-100 md:order-first shrink-0">
                 <Image
                   src="/books/image.png"
                   alt={book.title}

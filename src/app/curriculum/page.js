@@ -24,30 +24,20 @@ export default function CurriculumPage() {
               اتحاد و اتفاق کے اصول
             </h2>
 
-            <div className="grid grid-cols-1 md:grid-cols-2 gap-6">
-              <div className="rounded-2xl p-6 bg-white border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-right font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em' }}>
-                  ۱۔ توحید کی آڑ میں توہین سے بچنا
-                </h3>
-              </div>
-
-              <div className="rounded-2xl p-6 bg-white border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-right font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em' }}>
-                  ۲۔ عقیدت و محبت کے پردے میں شرکیہ سے بچنا
-                </h3>
-              </div>
-
-              <div className="rounded-2xl p-6 bg-white border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-right font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em' }}>
-                  ۳۔ تحقیق کے پردے میں خود رائی سے بچنا
-                </h3>
-              </div>
-
-              <div className="rounded-2xl p-6 bg-white border-2 border-gray-200">
-                <h3 className="text-xl font-bold text-right font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.05em' }}>
-                  ۴۔ دین کے شعبے میں تقابلی انداز سے بچنا
-                </h3>
-              </div>
+            <div className="grid grid-cols-1 md:grid-cols-2 gap-4">
+              {[
+                { num: '۱', text: 'توحید کی آڑ میں توہین سے بچنا' },
+                { num: '۲', text: 'عقیدت و محبت کے پردے میں شرکیہ سے بچنا' },
+                { num: '۳', text: 'تحقیق کے پردے میں خود رائی سے بچنا' },
+                { num: '۴', text: 'دین کے شعبے میں تقابلی انداز سے بچنا' }
+              ].map((item, index) => (
+                <div key={index} className="rounded-xl p-6 flex items-center gap-4 bg-white border-2 border-gray-200">
+                  <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-gray-50">
+                    <span className="font-bold text-gray-700">{item.num}</span>
+                  </div>
+                  <p className="font-jameel font-bold text-right" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>{item.text}</p>
+                </div>
+              ))}
             </div>
           </div>
         </section>
@@ -74,7 +64,7 @@ export default function CurriculumPage() {
                   <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-gray-50">
                     <span className="font-bold text-gray-700">{item.num}</span>
                   </div>
-                  <p className="font-jameel text-right" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>{item.text}</p>
+                  <p className="font-jameel font-bold text-right" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>{item.text}</p>
                 </div>
               ))}
             </div>
@@ -100,7 +90,7 @@ export default function CurriculumPage() {
                   <div className="w-12 h-12 rounded-full flex items-center justify-center shrink-0 bg-gray-50">
                     <span className="font-bold text-gray-700">{item.num}</span>
                   </div>
-                  <p className="font-jameel text-right" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>{item.text}</p>
+                  <p className="font-jameel font-bold text-right" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>{item.text}</p>
                 </div>
               ))}
             </div>
@@ -124,7 +114,7 @@ export default function CurriculumPage() {
                   <div className="w-16 h-16 rounded-full flex items-center justify-center mx-auto mb-4 bg-gray-50">
                     <span className="text-2xl font-bold text-gray-700">{item.num}</span>
                   </div>
-                  <p className="font-jameel" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontSize: '1.1rem' }}>{item.text}</p>
+                  <p className="font-jameel font-bold" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontSize: '1.1rem' }}>{item.text}</p>
                 </div>
               ))}
             </div>
