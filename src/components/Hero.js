@@ -51,7 +51,7 @@ export default function Hero() {
             <button onClick={handleAboutScroll} className="border-2 font-semibold pt-2 pb-1 px-6 rounded-xl transition duration-300 cursor-pointer inline-block" style={{ borderColor: 'var(--gold)', color: '#ffffff', backgroundColor: 'var(--gold)' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#d4af37'} onMouseLeave={(e) => e.target.style.backgroundColor = 'var(--gold)'}>
               تعارف پڑھیں
             </button>
-            <button onClick={handleContactScroll} className="border-2 font-semibold pt-2 px-6 rounded-xl transition duration-300 cursor-pointer" style={{ borderColor: 'var(--gold)', color: 'var(--gold)' }} onMouseEnter={(e) => e.target.style.backgroundColor = '#3e2723'} onMouseLeave={(e) => e.target.style.backgroundColor = 'transparent'}>
+            <button onClick={handleContactScroll} className="border-2 font-semibold pt-2 px-6 rounded-xl transition duration-300 cursor-pointer" style={{ borderColor: 'var(--gold)', color: 'var(--gold)' }}>
               رابطہ کریں
             </button>
           </div>
