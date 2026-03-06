@@ -68,7 +68,7 @@ export default function QuotesPage() {
       {/* Header Section */}
       <section className="pt-32 px-4 bg-gray-50" style={{ scrollMarginTop: '80px', paddingTop: '120px' }}>
         <div className="max-w-5xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold mt-4" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em', lineHeight: '1.6' }}>
+          <h1 className="text-4xl md:text-6xl font-bold mt-4" style={{ color: 'var(--foreground)', fontFamily: 'Mehr', letterSpacing: '0.008em', lineHeight: '1.6' }}>
             ملفوظات
           </h1>
         </div>
@@ -86,7 +86,7 @@ export default function QuotesPage() {
                 style={{
                   backgroundColor: selectedLanguage === lang ? '#2c2416' : '#f5f5f5',
                   color: selectedLanguage === lang ? '#ffffff' : '#2c2416',
-                  fontFamily: lang === 'English' ? 'inherit' : 'Jameel Noori Nastaleeq',
+                  fontFamily: lang === 'English' ? 'inherit' : 'Mehr',
                   fontSize: lang === 'English' ? '1rem' : '1.1rem',
                   letterSpacing: lang === 'English' ? '0.01em' : '0.04em',
                   border: 'none',
@@ -120,7 +120,7 @@ export default function QuotesPage() {
                   className="text-base md:text-lg leading-relaxed mb-6 font-bold"
                   style={{
                     color: 'var(--foreground)',
-                    fontFamily: quote.language === 'English' ? 'inherit' : quote.language === 'العربية' ? 'var(--font-gulzar)' : 'Jameel Noori Nastaleeq',
+                    fontFamily: quote.language === 'English' ? 'inherit' : quote.language === 'العربية' ? 'Mehr' : 'Mehr',
                     letterSpacing: quote.language === 'English' ? '0.01em' : '0.04em',
                     lineHeight: '1.9',
                     wordSpacing: quote.language === 'English' ? '0.05em' : '0.08em',
@@ -138,7 +138,7 @@ export default function QuotesPage() {
                   className="text-sm md:text-base font-semibold"
                   style={{
                     color: 'var(--warm-brown)',
-                    fontFamily: quote.language === 'English' ? 'inherit' : quote.language === 'العربية' ? 'var(--font-gulzar)' : 'Jameel Noori Nastaleeq',
+                    fontFamily: quote.language === 'English' ? 'inherit' : quote.language === 'العربية' ? 'Mehr' : 'Mehr',
                     letterSpacing: quote.language === 'English' ? '0.01em' : '0.04em',
                     textAlign: quote.language === 'العربية' ? 'right' : quote.language === 'اردو' ? 'right' : 'left'
                   }}

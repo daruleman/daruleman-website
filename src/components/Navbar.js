@@ -56,7 +56,7 @@ export default function Navbar() {
             />
           </div>
           <div className="text-right hidden sm:block">
-            <h1 className="text-lg text-gray-900" style={{ fontFamily: 'var(--font-gulzar)', letterSpacing: '0.04em', lineHeight: '1.6' }}>دارالایمان والتقویٰ</h1>
+            <h1 className="text-lg text-gray-900" style={{ fontFamily: 'Mehr', letterSpacing: '0.04em', lineHeight: '1.6' }}>دارالایمان والتقویٰ</h1>
           </div>
         </div>
 
@@ -67,7 +67,7 @@ export default function Navbar() {
               <button
                 onClick={() => handleNavigation(link.href)}
                 className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 text-base cursor-pointer"
-                style={{ fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}
+                style={{ fontFamily: 'Mehr', letterSpacing: '0.04em' }}
               >
                 {link.label}
               </button>
@@ -93,7 +93,7 @@ export default function Navbar() {
                 <button
                   onClick={() => handleNavigation(link.href)}
                   className="text-gray-700 hover:text-gray-900 font-medium transition-colors duration-200 text-base cursor-pointer w-full text-right"
-                  style={{ fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}
+                  style={{ fontFamily: 'Mehr', letterSpacing: '0.04em' }}
                 >
                   {link.label}
                 </button>

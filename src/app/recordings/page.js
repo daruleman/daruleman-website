@@ -82,7 +82,7 @@ export default function RecordingsPage() {
       {/* Header Section */}
       <section className="pt-40 pb-8 px-4 bg-gray-50" style={{ scrollMarginTop: '80px', paddingTop: '120px' }}>
         <div className="max-w-7xl mx-auto text-center">
-          <h1 className="text-4xl md:text-6xl font-bold" style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', letterSpacing: '0.008em', lineHeight: '1.6' }}>
+          <h1 className="text-4xl md:text-6xl font-bold" style={{ color: 'var(--foreground)', fontFamily: 'Mehr', letterSpacing: '0.008em', lineHeight: '1.6' }}>
             حمد و نعت و کلام
           </h1>
         </div>
@@ -124,7 +124,7 @@ export default function RecordingsPage() {
                   color: '#333'
                 }}
               >
-                <span style={{ fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.02em' }}>
+                <span style={{ fontFamily: 'Mehr', letterSpacing: '0.02em' }}>
                   {sortOrder === 'newest' ? 'نیا پہلے' : 'پرانا پہلے'}
                 </span>
                 <ChevronDown size={18} />
@@ -143,7 +143,7 @@ export default function RecordingsPage() {
                   backgroundColor: '#ffffff',
                   border: '1px solid #e0e0e0',
                   color: '#333',
-                  fontFamily: 'Jameel Noori Nastaleeq',
+                  fontFamily: 'Mehr',
                   letterSpacing: '0.02em',
                   textAlign: 'right'
                 }}
@@ -158,19 +158,19 @@ export default function RecordingsPage() {
               {/* Table Header */}
               <thead>
                 <tr style={{ backgroundColor: '#3e2723' }}>
-                  <th className="px-4 py-4 text-right" style={{ color: '#ffffff', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontWeight: '600' }}>
+                  <th className="px-4 py-4 text-right" style={{ color: '#ffffff', fontFamily: 'Mehr', letterSpacing: '0.04em', fontWeight: '600' }}>
                     نمبر
                   </th>
-                  <th className="px-4 py-4 text-right" style={{ color: '#ffffff', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontWeight: '600' }}>
+                  <th className="px-4 py-4 text-right" style={{ color: '#ffffff', fontFamily: 'Mehr', letterSpacing: '0.04em', fontWeight: '600' }}>
                     عنوان
                   </th>
-                  <th className="px-4 py-4 text-right" style={{ color: '#ffffff', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontWeight: '600' }}>
+                  <th className="px-4 py-4 text-right" style={{ color: '#ffffff', fontFamily: 'Mehr', letterSpacing: '0.04em', fontWeight: '600' }}>
                     مقرر
                   </th>
-                  <th className="px-4 py-4 text-right" style={{ color: '#ffffff', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontWeight: '600' }}>
+                  <th className="px-4 py-4 text-right" style={{ color: '#ffffff', fontFamily: 'Mehr', letterSpacing: '0.04em', fontWeight: '600' }}>
                     تاریخ
                   </th>
-                  <th className="px-4 py-4 text-center" style={{ color: '#ffffff', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em', fontWeight: '600' }}>
+                  <th className="px-4 py-4 text-center" style={{ color: '#ffffff', fontFamily: 'Mehr', letterSpacing: '0.04em', fontWeight: '600' }}>
                     سنیں
                   </th>
                 </tr>
@@ -194,12 +194,12 @@ export default function RecordingsPage() {
                     </td>
 
                     {/* Title */}
-                    <td className="px-4 py-4 text-right" style={{ color: '#333', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.03em' }}>
+                    <td className="px-4 py-4 text-right" style={{ color: '#333', fontFamily: 'Mehr', letterSpacing: '0.03em' }}>
                       {recording.title}
                     </td>
 
                     {/* Speaker */}
-                    <td className="px-4 py-4 text-right" style={{ color: '#666', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.03em', fontSize: '0.95rem' }}>
+                    <td className="px-4 py-4 text-right" style={{ color: '#666', fontFamily: 'Mehr', letterSpacing: '0.03em', fontSize: '0.95rem' }}>
                       {recording.speaker}
                     </td>
 
@@ -231,7 +231,7 @@ export default function RecordingsPage() {
           {/* Empty State */}
           {filteredRecordings.length === 0 && (
             <div className="text-center py-16">
-              <p style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', fontSize: '1.2rem', letterSpacing: '0.04em' }}>
+              <p style={{ color: 'var(--primary)', fontFamily: 'Mehr', fontSize: '1.2rem', letterSpacing: '0.04em' }}>
                 اس زبان میں کوئی ریکارڈنگ دستیاب نہیں ہے۔
               </p>
             </div>
@@ -259,10 +259,10 @@ export default function RecordingsPage() {
 
                 {/* Track Info */}
                 <div className="flex-1 text-center min-w-0">
-                  <h4 className="font-bold truncate text-sm" style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.04em' }}>
+                  <h4 className="font-bold truncate text-sm" style={{ color: 'var(--foreground)', fontFamily: 'Mehr', letterSpacing: '0.04em' }}>
                     {filteredRecordings[playingIndex].title}
                   </h4>
-                  <p className="text-xs truncate" style={{ color: 'var(--primary)', fontFamily: 'Jameel Noori Nastaleeq', letterSpacing: '0.03em' }}>
+                  <p className="text-xs truncate" style={{ color: 'var(--primary)', fontFamily: 'Mehr', letterSpacing: '0.03em' }}>
                     {filteredRecordings[playingIndex].speaker}
                   </p>
                 </div>

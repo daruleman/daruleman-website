@@ -58,11 +58,11 @@ export default function CampusesPage() {
       <section className="pt-32 px-4 text-center bg-gray-50">
         <div className="max-w-5xl mx-auto">
           <h1 className="text-4xl md:text-6xl font-bold mb-4" 
-              style={{ color: 'var(--foreground)', fontFamily: 'var(--font-gulzar)', lineHeight: '1.6' }}>
+              style={{ color: 'var(--foreground)', fontFamily: 'Mehr', lineHeight: '1.6' }}>
             مراکز و مجالس
           </h1>
           <p className="text-lg md:text-xl" 
-             style={{ color: '#000000', fontFamily: 'Jameel Noori Nastaleeq' }}>
+             style={{ color: '#000000', fontFamily: 'Mehr' }}>
             تعلیمِ قرآن و سنت کے لیے شہر بہ شہر ہمارے علمی حلقات کا اہتمام کیا جاتا ہے۔
           </p>
         </div>
@@ -74,7 +74,7 @@ export default function CampusesPage() {
           {Object.entries(centers).map(([cityName, cityCenters], cityIndex) => (
             <div key={cityIndex} className="mb-20">
               <h3 className="text-3xl font-bold mb-10 inline-block pb-2" 
-                  style={{ color: '#3e2723', fontFamily: 'Jameel Noori Nastaleeq' }}>
+                  style={{ color: '#3e2723', fontFamily: 'Mehr' }}>
                 {cityName}
               </h3>
 
@@ -90,7 +90,7 @@ export default function CampusesPage() {
                     }}
                   >
                     <h4 className="text-xl md:text-2xl font-bold mb-4" 
-                        style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', lineHeight: '1.6' }}>
+                        style={{ color: 'var(--foreground)', fontFamily: 'Mehr', lineHeight: '1.6' }}>
                       {center.name}
                     </h4>
 
@@ -103,7 +103,7 @@ export default function CampusesPage() {
                       {center.phone && (
                         <div>
                           <p style={{ color: 'var(--foreground)', fontSize: '1rem' }}>
-                            <span style={{ color: 'var(--primary)', fontWeight: 'bold', fontFamily: 'Jameel Noori Nastaleeq' }}>فون: </span>
+                            <span style={{ color: 'var(--primary)', fontWeight: 'bold', fontFamily: 'Mehr' }}>فون: </span>
                             <span style={{ fontFamily: 'monospace', direction: 'ltr', display: 'inline-block' }}>{center.phone}</span>
                           </p>
                         </div>
@@ -123,7 +123,7 @@ export default function CampusesPage() {
 
 function DetailRow({ label, value }) {
   return (
-    <p style={{ color: 'var(--foreground)', fontFamily: 'Jameel Noori Nastaleeq', fontSize: '1.1rem', lineHeight: '1.6' }}>
+    <p style={{ color: 'var(--foreground)', fontFamily: 'Mehr', fontSize: '1.1rem', lineHeight: '1.6' }}>
       <span style={{ color: 'var(--primary)', fontWeight: 'bold' }}>{label}: </span>
       {value}
     </p>
