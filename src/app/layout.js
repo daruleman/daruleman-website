@@ -27,7 +27,7 @@ export default function RootLayout({ children }) {
         <style>{`
           @font-face {
             font-family: 'Mehr';
-            src: url('/fonts/mehrweb.ttf') format('truetype');
+            src: url('/fonts/mehrweb.woff2') format('woff2');
             font-weight: normal;
             font-style: normal;
             font-feature-settings: 'liga', 'dlig', 'calt', 'ss01';
